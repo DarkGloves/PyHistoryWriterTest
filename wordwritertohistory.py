@@ -11,7 +11,6 @@ try:
    doc = open ("history.wtf" , "r+")  
 except FileNotFoundError:
      doc = open ("history.wtf" , "w")
-
 a = 100000000
 b = 1 
 for b in range (a) :
@@ -22,6 +21,5 @@ for b in range (a) :
     for objects1 in range (objects2):
         (doc.readline())
         objects1 = objects1 + 1
-
-    wordwrite = input("input here a word to write, then press ENTER ; do a keyboard interrupt (Ctrl^c) to exit:   ")
+    wordwrite = input("Input here a word to write, then press ENTER ; do a keyboard interrupt (Ctrl^c) to exit:   ")
     doc.write(str(wordwrite) + "\n")
